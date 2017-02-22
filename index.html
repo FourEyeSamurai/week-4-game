@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+	
+	<title>Star Wars RPG</title>
+
+</head>
+<body>
+
+	<div class="row" id="character">
+			
+	
+	</div>
+
+	<div class="row" id="user-info"><p>Character Select</p></div>
+
+	<div class="row" id="enemy">
+			
+	</div>
+
+	<div class="row" id="enemy-info"><p>Enemy Select</p></div>
+
+	<div class="row" id="battle">
+
+
+	</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	var charStats = function(name, attack, hitpoints, pic){
+		this.name = name;
+		this.attack = attack;
+		this.hitpoints = hitpoints;
+		this.pic = pic;
+	}
+	
+
+	var fighters = [
+
+		new charStats('Anakin Skywalker', 5, 2600, '<img src="assets/images/placeholder1.png">'),
+		new charStats('Darth Vader', 5, 3000, '<img src="assets/images/placeholder1.png">'),
+		new charStats('Luke Skywalker', 5, 2800, '<img src="assets/images/placeholder1.png">'),
+		new charStats('Obi Wan Kenobi', 5, 2700, '<img src="assets/images/placeholder1.png">')
+
+	];
+
+	for (var i=0; i < fighters.length; i++){
+        var charSelect = $("<div>");
+        charSelect.html(fighters[i].pic);
+        $("#character").append(charSelect);
+    };
+	
+
+
+		
+
+
+
+			// Player chooses character, moves other character to enemy row.
+			// Once a player character has been chosen, other characters can not be picked as player character.
+		
+			
+			// var playerSelect = function(){
+
+
+			// $("#player-select img").on("click", function(){
+			// 	console.log('this is', this);
+			// $("#player-two").appendTo("#enemy-select").off("click");
+			// $("#player-three").appendTo("#enemy-select").off("click");
+			// $("#player-four").appendTo("#enemy-select").off("click");
+			
+			// });
+
+	
+			// // $("#player-two").on("click", function(){
+			// // $("#player-one").appendTo("#enemy-select").off("click");
+			// // $("#player-three").appendTo("#enemy-select").off("click");
+			// // $("#player-four").appendTo("#enemy-select").off("click");
+			
+			// // check("#player-two")
+			// // });
+
+			// $("#player-three").on("click", function(){
+			// $("#player-one").appendTo("#enemy-select").off("click");
+			// $("#player-two").appendTo("#enemy-select").off("click");
+			// $("#player-four").appendTo("#enemy-select").off("click");
+			
+			// });
+
+			// $("#player-four").on("click", function(){
+			// $("#player-one").appendTo("#enemy-select").off("click");
+			// $("#player-two").appendTo("#enemy-select").off("click");
+			// $("#player-three").appendTo("#enemy-select").off("click");
+			
+			// });
+
+		// });
+
+		// playerSelect();
+
+
+		
+		//Player chooses enemy to fight, moves from Enemy Select to Battle Area
+		//Once enemy has been chosen, other enemies can not be picked until chosen enemy is defeated
+
+		// var enemySelect = function(){
+
+			
+		// };
+
+	
+		// enemySelect();
+
+
+
+
+		// var battle = function(){
+
+		// };
+
+		// battle();
+		// enemySelect();
+
+		
+
+		// //If player wins, or loses game the player can hit a button to start over.
+		// var reset = function(){
+
+		// };
+
+		// reset();
+		// playerSelect();
+  
+
+  });
+
+</script>
+
+</body>
+</html>

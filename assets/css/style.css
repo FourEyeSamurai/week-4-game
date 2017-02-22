@@ -1,0 +1,49 @@
+body{
+	background-image: url("../images/lightspeed.jpg");
+	background-position: center;
+	
+}	
+
+#character img{
+	float: left;
+
+}
+
+.text-center{
+	color: #ffe81f;
+}
+
+p{
+	color: red;
+}
+
+#user-info{
+	margin-left: 350px;
+}
+
+#enemy-info{
+	margin-left: 350px;
+}
+
+
+/*#player-select{
+	border: dashed;
+	background-color: green;
+	height: 210px;
+	width: 1170px;
+}*/
+
+
+/*#enemy-select{
+	border:dashed;
+	background-color: yellow;
+	height: 210px;
+	width: 1170px;
+}
+
+#battle-area{
+	border: dashed;
+	background-color: red;
+	height: 210px;
+	width: 1170px;
+}*/
