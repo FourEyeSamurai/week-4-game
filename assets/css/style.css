@@ -4,9 +4,10 @@ body{
 	
 }	
 
-#character img{
+img{
+	height: 200px;
+	width: 200px;
 	float: left;
-
 }
 
 .text-center{
@@ -25,25 +26,9 @@ p{
 	margin-left: 350px;
 }
 
-
-/*#player-select{
-	border: dashed;
-	background-color: green;
-	height: 210px;
-	width: 1170px;
-}*/
-
-
-/*#enemy-select{
-	border:dashed;
-	background-color: yellow;
-	height: 210px;
-	width: 1170px;
+#battle-info{
+	margin-left: 350px;
 }
 
-#battle-area{
-	border: dashed;
-	background-color: red;
-	height: 210px;
-	width: 1170px;
-}*/
+
+
